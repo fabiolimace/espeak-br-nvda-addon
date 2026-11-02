@@ -6,7 +6,7 @@
 import os  # noqa: I001
 from collections import OrderedDict
 
-from . import _espeak
+from . import _espeakbr as _espeak
 from languageHandler import (
 	getLanguage,
 	stripLocaleFromLangCode,
@@ -29,8 +29,8 @@ from speechXml import toXmlLang
 
 
 class SynthDriver(SynthDriver):
-	name = "espeak"
-	description = "eSpeak NG"
+	name = "espeakbr"
+	description = "eSpeak BR"
 
 	supportedSettings = (
 		SynthDriver.VoiceSetting(),
